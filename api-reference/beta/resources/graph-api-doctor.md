@@ -30,7 +30,7 @@ API Doctor validates an HTTP example against the related resources and checks fo
 
 In this case, the error was caused by having no blank line between the headers and the body of the request in the example that is provided in the topic.
 
-The error message contains the `name` that is defined in the HTML comment as described in the [JSON-descriptions](#JSON-descriptions). The error message also contains the description of the error.
+The error message contains the `name` that is defined in the HTML comment as described in the [JSON element descriptions](#json-element-descriptions). The error message also contains the description of the error.
 
 ## Set up for API Doctor in a resource topic
 
@@ -45,7 +45,7 @@ When you run the stub generator, the HTML comments needed for running API Doctor
 }-->
 ```
 
-For a description of the JSON elements used in the HTML comment, see [JSON-descriptions](#JSON-descriptions).
+For a description of the JSON elements used in the HTML comment, see the [JSON element descriptions](#json-element-descriptions).
 
 ## Set up for API Doctor in an API topic
 
@@ -76,7 +76,7 @@ API Doctor can validate an example only if you organize the request and response
 
 To document cases where one example request can result in mulitple possible responses, it’s better to separately describe and form a request-response pair for each case. This way, you can enable API Doctor validation for each of the example responses.
 
-## JSON descriptions
+## JSON element descriptions
 
 The most important property in the JSON object is `blockType`, which must be one of:
 
