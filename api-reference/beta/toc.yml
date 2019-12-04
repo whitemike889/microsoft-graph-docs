@@ -9091,7 +9091,7 @@
             href: resources/graph-manage-docs.md
           - name: Run stub generator
             href: resources/graph-stub-generator.md
-          - name: Use APIDoctor
+          - name: Fix API Doctor errors
             href: resources/graph-api-doctor.md
         - name: Manage content
           items:
