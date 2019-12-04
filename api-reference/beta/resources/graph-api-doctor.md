@@ -30,7 +30,7 @@ API Doctor validates an HTTP example against the related resources and checks fo
 
 In this case, the error was caused by having no blank line between the headers and the body of the request in the example that is provided in the topic.
 
-The error message contains the `name` that is defined in the HTML comment as described in the [JSON descriptions](#JSON-descriptions). The error message also contains the description of the error.
+The error message contains the `name` that is defined in the HTML comment as described in the [JSON-descriptions](#JSON-descriptions). The error message also contains the description of the error.
 
 ## Set up for API Doctor in a resource topic
 
@@ -45,7 +45,7 @@ When you run the stub generator, the HTML comments needed for running API Doctor
 }-->
 ```
 
-For a description of the JSON elements used in the HTML comment, see [JSON descriptions](#JSON-descriptions).
+For a description of the JSON elements used in the HTML comment, see [JSON-descriptions](#JSON-descriptions).
 
 ## Set up for API Doctor in an API topic
 
