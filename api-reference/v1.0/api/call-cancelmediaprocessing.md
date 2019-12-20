@@ -113,32 +113,32 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
-{
-  "@odata.type": "#microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.recordOperation",
-		"@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-		"id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-		"status": "failed",
-        "resultInfo": {
-          "@odata.type": "#microsoft.graph.resultInfo",
-          "code": 400,
-          "subcode": 8508,
-          "message": "Action falied, the operation was cancelled."
-        },
-		"recordingLocation": "",
-        "recordingAccessToken": "",
-        "completionReason": "operationCanceled"
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resourceUrl":"/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.recordOperation",
+            "@odata.id":"/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+            "@odata.etag":"W/\"54451\"",
+            "id":"0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+            "clientContext":"d45324c1-fcb5-430a-902c-f20af696537c",
+            "status":"failed",
+            "resultInfo":{ 
+               "@odata.type":"#microsoft.graph.resultInfo",
+               "code":400,
+               "subcode":8508,
+               "message":"Action falied, the operation was cancelled."
+            },
+            "recordingLocation":"",
+            "recordingAccessToken":"",
+            "completionReason":"operationCanceled"
+         }
       }
-    }
-  ]
+   ]
 }
 ```
 
