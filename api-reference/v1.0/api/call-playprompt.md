@@ -43,6 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |prompts|[MediaPrompt](../resources/mediaprompt.md) collection| The prompts to be played. The maximum supported MediaPrompt collection size is 20.|
+|loop|Boolean| The loop value. True indicates to loop infinitely. The default value is false. |
 |clientContext|String|Unique client context string. Can have a maximum of 256 characters.|
 
 ## Response
@@ -76,7 +77,8 @@ Content-Length: 166
         "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       }
     }
-  ]
+  ],
+  "loop": false
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -112,6 +114,8 @@ Content-Type: application/json
 
 ##### Notification - operation completed
  
+>**Note:** If infinite looping occurs, this notification is not sent.
+  
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
